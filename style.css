@@ -1,0 +1,75 @@
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-color: #fde4f1; /* Light pink for a kawaii feel */
+    color: #ff69b4; /* Bright pink for text */
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#questionScreen h1 {
+    margin-top: 50px;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #a1caff; /* Light blue */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#animationScreen {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#peaceImage {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+#flyingText {
+    position: absolute;
+    font-size: 30px;
+    color: #ff1493; /* Deep pink */
+    white-space: nowrap;
+    animation: flyText 5s linear infinite;
+}
+
+@keyframes flyText {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.dove, .balloon {
+    position: fixed;
+    bottom: 0;
+}
+
+.dove {
+    background: url('https://static8.depositphotos.com/1361307/902/i/450/depositphotos_9025249-stock-photo-pigoen-flying.jpg') no-repeat center center;
+    background-size: cover;
+    width: 50px;
+    height: 30px;
+}
+
+.balloon {
+    border-radius: 50%;
+}
